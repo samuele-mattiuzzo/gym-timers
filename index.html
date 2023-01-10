@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A Basic HTML5 Template</title>
+  <title>Gym timers & conditioning randomizer</title>
   <meta name="description" content="Gym timers">
   <meta name="author" content="Samuele Mattiuzzo">
 
   <meta property="og:title" content="Gym timers">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:description" content="Simple gym timers based on my routines.">
+  <meta property="og:description" content="Simple gym timers and my routines for conditioning">
 
   <link rel="icon" href="/favicon.ico">
 
@@ -21,7 +20,61 @@
 </head>
 
 <body>
-  <!-- your content here... -->
+  <div id="conditioning-randomizer">
+    <ul>
+      <li class="no-show">
+        300 swings:
+        - 10 KB swings
+        - 30 sets
+        - EMOM
+      </li>
+      <li class="no-show">
+        Swings + farmer carry:
+        - 10-20 KB swings, 15 mins, EMOM
+        - In between sets, carry the two bells during rest
+      </li>
+      <li class="no-show">
+        Armour Building Complex:
+        - 2 cleans, 1 press, 3 front squats
+        - AMRAP 20-30 minutes
+        - 30/60s rest
+      </li>
+      <li class="no-show">
+        Bear Building Complex:
+        - 3 to 5 circuit reps
+        - EMOM
+        - Minute 1: 2 cleans, 2 press, 2 front squats
+        - Minute 2: 3 cleans, 3 press, 3 front squats
+        - Minute 3: 5 cleans, 5 press, 5 front squats
+      </li>
+      <li class="no-show">
+        A+A 5
+        - 5 to 10 circuit reps
+        - Minute 1/2/3: 5 swings every 30 seconds, 5 times
+        - Minute 4/5/6: 5 pushups every 30 seconds, 5 times
+        - Rest 30s
+      </li>
+      <li class="no-show">
+        A+A 10
+        - 5 to 10 circuit reps
+        - Minute 1/2: 10 swings, 10 swings
+        - Minute 3/4: 10 pushups, 10 pushups
+        - Rest 60s
+      </li>
+    </ul>
+  </div>
+  <div id="timers-list">
+    <ul>
+      <li><button data-time="30">30s</button></li>
+      <li><button data-time="60">60s</button></li>
+      <li><button data-time="90">1m30s</button></li>
+      <li><button data-time="120">2m</button></li>
+      <li><button data-time="180">3m</button></li>
+      <li><button data-time="300">5m</button></li>
+    </ul>
+  </div>
+  
+  
   <script src="scripts.js"></script>
 </body>
 </html>
